@@ -1,0 +1,17 @@
+{
+  "outputDirectory": "frontend/dist",
+  "rewrites": [
+    {
+      "source": "/api/:match*",
+      "destination": "/api"
+    },
+    {
+      "source": "/health",
+      "destination": "/api"
+    },
+    {
+      "source": "/((?!api/|assets/|favicon.ico|CC.png).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
